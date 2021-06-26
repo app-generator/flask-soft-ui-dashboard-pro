@@ -4,11 +4,12 @@
 
 <br />
 
-> Features:
-
 - UI Kit: **[Soft UI Dashboard PRO](https://bit.ly/2RtSXVa)** (Free Version) by **Creative-Tim**
-- Render Engine: Flask / Jinja2
-- Deployment scripts: Docker, Gunicorn/Nginx, HEROKU
+- DBMS: SQLite, PostgreSQL (production) 
+- DB Tools: SQLAlchemy ORM, Flask-Migrate (schema migrations)
+- Modular design with **Blueprints**
+- Session-Based authentication (via **flask_login**), Forms validation
+- Deployment scripts: Docker, Gunicorn / Nginx, HEROKU
 - Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
 
 <br />
