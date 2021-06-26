@@ -23,8 +23,8 @@
 
 ## Buy Product (via PayPal)
 
-- $99 - [Soft UI Dashboard PRO Flask](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZCA4T3KR3CVSC) - [Personal License](https://github.com/app-generator/license-personal)
-- $79 - [Soft UI Dashboard PRO Flask](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9PWSX92QXSB86) - [EDU License](https://github.com/app-generator/license-education)
+- **$99** - [Soft UI Dashboard PRO Flask](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZCA4T3KR3CVSC) - **[Personal License](https://github.com/app-generator/license-personal)**
+- **$79** - [Soft UI Dashboard PRO Flask](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9PWSX92QXSB86) - **[EDU License](https://github.com/app-generator/license-education)**
 
 <br />
 
