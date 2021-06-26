@@ -28,7 +28,7 @@ The most complex and innovative Dashboard Made by Creative Tim: made of hundred 
 
 <br />
 
-![Jinja Template - Starter provided by AppSeed.](https://raw.githubusercontent.com/app-generator/jinja-soft-ui-dashboard/master/media/jinja-soft-ui-dashboard-screen.png)
+![Soft UI Dashboard PR0 - Flask Seed Project.](https://user-images.githubusercontent.com/51070104/123518571-1f703400-d6af-11eb-8aab-cf1b9c5e2763.png)
 
 <br />
 
