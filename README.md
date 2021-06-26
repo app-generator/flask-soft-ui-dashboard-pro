@@ -1,4 +1,4 @@
-# [Soft UI Dashboard](https://appseed.us/ui-kit/soft-ui-design-system) Flask
+# [Soft UI Dashboard PRO](https://appseed.us/ui-kit/soft-ui-design-system) Flask
 
 **Flask Seed Project** provided by AppSeed on top of **Soft UI Dashboard PRO**, a modern Bootstrap 5 design from Creative-Tim. The project might help beginners to code simple presentation websites on top of the existing codebase OR migrate the `production-ready` UI to a legacy Python-based project compatible with **Jinja Template Engine**: *Flask*, *Django*, *Bottle* of *FastAPI*. 
 
