@@ -16,7 +16,7 @@
 > Links:
 
 - [Soft UI Dashboard PRO Flask](https://flask-soft-ui-dashboard-pro.appseed-srv1.com/) - LIVE Demo
-- [Soft UI Dashboard PRO Flask](https://appseed.us/product/flask-soft-ui-dashboard-pro) - Product Page
+- [Soft UI Dashboard PRO Flask](#) - Product Page (coming soon)
 
 <br />
 
@@ -339,4 +339,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Soft UI Dashboard PRO](https://appseed.us/ui-kit/soft-ui-design-system) FLask - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
+[Soft UI Dashboard PRO](https://appseed.us/ui-kit/soft-ui-design-system) Flask - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
