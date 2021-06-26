@@ -21,6 +21,13 @@
 
 <br />
 
+## Buy Product (via PayPal)
+
+- $99 - [Soft UI Dashboard PRO Flask](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZCA4T3KR3CVSC) - [Personal License](https://github.com/app-generator/license-personal)
+- $79 - [Soft UI Dashboard PRO Flask](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9PWSX92QXSB86) - [EDU License](https://github.com/app-generator/license-education)
+
+<br />
+
 ## [Soft UI Dashboard PRO](https://bit.ly/2RtSXVa)
 
 The most complex and innovative Dashboard Made by Creative Tim: made of hundred of elements, designed blocks and fully coded pages, Soft UI Dashboard is ready to help you create stunning websites and web apps. 
