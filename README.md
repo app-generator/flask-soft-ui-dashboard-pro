@@ -1,6 +1,6 @@
-# [Soft UI Dashboard PRO](https://appseed.us/ui-kit/soft-ui-design-system) Flask
+# Soft Dashboard PRO Flask
 
-**Flask Seed Project** provided by AppSeed on top of **Soft UI Dashboard PRO**, a modern Bootstrap 5 design from Creative-Tim. The project might help beginners to code simple presentation websites on top of the existing codebase OR migrate the `production-ready` UI to a legacy Python-based project compatible with **Jinja Template Engine**: *Flask*, *Django*, *Bottle* of *FastAPI*. 
+**Flask Seed Project** provided by AppSeed on top of **[Soft UI Dashboard PRO](https://appseed.us/product/flask-soft-ui-dashboard-pro)**, a modern Bootstrap 5 design from Creative-Tim. The project might help beginners to code simple presentation websites on top of the existing codebase OR migrate the `production-ready` UI to a legacy Python-based project compatible with **Jinja Template Engine**: *Flask*, *Django*, *Bottle* of *FastAPI*. 
 
 <br />
 
@@ -16,8 +16,8 @@
 
 > Links:
 
+- [Soft UI Dashboard PRO Flask](https://appseed.us/product/flask-soft-ui-dashboard-pro) - Product Page
 - [Soft UI Dashboard PRO Flask](https://flask-soft-ui-dashboard-pro.appseed-srv1.com/) - LIVE Demo
-- [Soft UI Dashboard PRO Flask](#) - Product Page (coming soon)
 
 <br />
 
@@ -347,4 +347,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Soft UI Dashboard PRO](https://appseed.us/ui-kit/soft-ui-design-system) Flask - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
+Soft UI Dashboard PRO Flask - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
