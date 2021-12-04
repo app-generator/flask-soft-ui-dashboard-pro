@@ -1,10 +1,12 @@
-# Soft Dashboard PRO Flask
+# [Soft UI Dashboard PRO Flask](https://appseed.us/product/flask-soft-ui-dashboard-pro)
 
-**Flask Seed Project** provided by AppSeed on top of **[Soft UI Dashboard PRO](https://appseed.us/product/flask-soft-ui-dashboard-pro)**, a modern Bootstrap 5 design from Creative-Tim. The project might help beginners to code simple presentation websites on top of the existing codebase OR migrate the `production-ready` UI to a legacy Python-based project compatible with **Jinja Template Engine**: *Flask*, *Django*, *Bottle* of *FastAPI*. 
+**Flask Seed Project** provided by AppSeed on top of **Soft UI Dashboard PRO**, a modern Bootstrap 5 design from Creative-Tim. The project might help beginners to code simple presentation websites on top of the existing codebase OR migrate the `production-ready` UI to a legacy Python-based project compatible with **Jinja Template Engine**: *Flask*, *Django*, *Bottle* of *FastAPI*. 
 
 <br />
 
-- UI Kit: **[Soft UI Dashboard](https://bit.ly/2RtSXVa)** (PRO Version) by **Creative-Tim**
+- `Up-to-date dependencies`: **Flask 2.0.1**
+- [SCSS compilation](#recompile-css) via **Gulp**
+- UI Kit: **[Soft UI Dashboard PRO](https://bit.ly/2RtSXVa)** (Free Version) by **Creative-Tim**
 - DBMS: SQLite, PostgreSQL (production) 
 - DB Tools: SQLAlchemy ORM, Flask-Migrate (schema migrations)
 - Modular design with **Blueprints**
@@ -21,22 +23,28 @@
 
 <br />
 
-## Buy Product (via PayPal)
+## Quick Start in [Docker](https://www.docker.com/)
 
-- **$99** - [Soft UI Dashboard PRO Flask](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZCA4T3KR3CVSC) - **[Personal License](https://github.com/app-generator/license-personal)**
-- **$79** - [Soft UI Dashboard PRO Flask](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9PWSX92QXSB86) - **[EDU License](https://github.com/app-generator/license-education)**
+> Get the code
+
+```bash
+$ git clone https://github.com/app-generator/priv-flask-soft-ui-dashboard-pro.git
+$ cd priv-flask-soft-ui-dashboard-pro
+```
+
+> Start the app in Docker
+
+```bash
+$ docker-compose pull   # download dependencies 
+$ docker-compose build  # local set up
+$ docker-compose up -d  # start the app 
+```
+
+Visit `http://localhost:85` in your browser. The app should be up & running.
 
 <br />
 
-## [Soft UI Dashboard PRO](https://bit.ly/2RtSXVa)
-
-The most complex and innovative Dashboard Made by Creative Tim: made of hundred of elements, designed blocks and fully coded pages, Soft UI Dashboard is ready to help you create stunning websites and web apps. 
-
-**Fully Coded Elements** - Soft UI Dashboard PRO is built with over 300 frontend individual elements, like buttons, inputs, navbars, navtabs, cards or alerts, giving you the freedom of choosing and combining. All components can take variations in colour, that you can easily modify using SASS files and classes.
-
-<br />
-
-![Soft UI Dashboard PR0 - Flask Seed Project.](https://user-images.githubusercontent.com/51070104/131249807-f256efc6-2256-4bb1-9367-cc50ddd7ce18.png)
+![Soft UI Dashboard PR0 - Flask Seed Project.](https://user-images.githubusercontent.com/51070104/123518571-1f703400-d6af-11eb-8aab-cf1b9c5e2763.png)
 
 <br />
 
@@ -82,24 +90,57 @@ $ # Access the dashboard in browser: http://127.0.0.1:5000/
 
 The project is coded using blueprints, app factory pattern, dual configuration profile (development and production) and an intuitive structure presented bellow:
 
-> Simplified version
-
 ```bash
 < PROJECT ROOT >
    |
-   |-- app/                      # Implements app logic
-   |    |-- base/                # Base Blueprint - handles the authentication
-   |    |-- home/                # Home Blueprint - serve UI Kit pages
+   |-- apps/
    |    |
-   |   __init__.py               # Initialize the app
+   |    |-- home/                          # A simple app that serve HTML files
+   |    |    |-- routes.py                 # Define app routes
+   |    |
+   |    |-- authentication/                # Handles auth routes (login and register)
+   |    |    |-- routes.py                 # Define authentication routes  
+   |    |    |-- models.py                 # Defines models  
+   |    |    |-- forms.py                  # Define auth forms (login and register) 
+   |    |
+   |    |-- static/
+   |    |    |-- <css, JS, images>         # CSS files, Javascripts files
+   |    |
+   |    |-- templates/                     # Templates used to render pages
+   |    |    |-- includes/                 # HTML chunks and components
+   |    |    |    |-- navigation.html      # Top menu component
+   |    |    |    |-- sidebar.html         # Sidebar component
+   |    |    |    |-- footer.html          # App Footer
+   |    |    |    |-- scripts.html         # Scripts common to all pages
+   |    |    |
+   |    |    |-- layouts/                   # Master pages
+   |    |    |    |-- base-fullscreen.html  # Used by Authentication pages
+   |    |    |    |-- base.html             # Used by common pages
+   |    |    |
+   |    |    |-- accounts/                  # Authentication pages
+   |    |    |    |-- login.html            # Login page
+   |    |    |    |-- register.html         # Register page
+   |    |    |
+   |    |    |-- home/                      # UI Kit Pages
+   |    |         |-- index.html            # Index page
+   |    |         |-- 404-page.html         # 404 page
+   |    |         |-- *.html                # All other pages
+   |    |    
+   |  config.py                             # Set up the app
+   |    __init__.py                         # Initialize the app
    |
-   |-- requirements.txt          # Development modules - SQLite storage
-   |-- requirements-mysql.txt    # Production modules  - Mysql DMBS
-   |-- requirements-pqsql.txt    # Production modules  - PostgreSql DMBS
+   |-- requirements.txt                     # Development modules - SQLite storage
+   |-- requirements-mysql.txt               # Production modules  - Mysql DMBS
+   |-- requirements-pqsql.txt               # Production modules  - PostgreSql DMBS
    |
-   |-- .env                      # Inject Configuration via Environment
-   |-- config.py                 # Set up the app
-   |-- run.py                    # Start the app - WSGI gateway
+   |-- Dockerfile                           # Deployment
+   |-- docker-compose.yml                   # Deployment
+   |-- gunicorn-cfg.py                      # Deployment   
+   |-- nginx                                # Deployment
+   |    |-- appseed-app.conf                # Deployment 
+   |
+   |-- .env                                 # Inject Configuration via Environment
+   |-- run.py                               # Start the app - WSGI gateway
    |
    |-- ************************************************************************
 ```
@@ -115,80 +156,6 @@ The project is coded using blueprints, app factory pattern, dual configuration p
 - Call the app factory method `create_app` defined in app/__init__.py
 - Redirect the guest users to Login page
 - Unlock the pages served by *home* blueprint for authenticated users
-
-<br />
-
-> App / Base Blueprint
-
-The *Base* blueprint handles the authentication (routes and forms) and assets management. The structure is presented below:
-
-```bash
-< PROJECT ROOT >
-   |
-   |-- app/
-   |    |-- home/                                # Home Blueprint - serve app pages (private area)
-   |    |-- base/                                # Base Blueprint - handles the authentication
-   |         |-- static/
-   |         |    |-- <css, JS, images>          # CSS files, Javascripts files
-   |         |
-   |         |-- templates/                      # Templates used to render pages
-   |              |
-   |              |-- includes/                  #
-   |              |    |-- navigation.html       # Top menu component
-   |              |    |-- sidebar.html          # Sidebar component
-   |              |    |-- footer.html           # App Footer
-   |              |    |-- scripts.html          # Scripts common to all pages
-   |              |
-   |              |-- layouts/                   # Master pages
-   |              |    |-- base-fullscreen.html  # Used by Authentication pages
-   |              |    |-- base.html             # Used by common pages
-   |              |
-   |              |-- accounts/                  # Authentication pages
-   |                   |-- login.html            # Login page
-   |                   |-- register.html         # Registration page
-   |
-   |-- requirements.txt                          # Development modules - SQLite storage
-   |-- requirements-mysql.txt                    # Production modules  - Mysql DMBS
-   |-- requirements-pqsql.txt                    # Production modules  - PostgreSql DMBS
-   |
-   |-- .env                                      # Inject Configuration via Environment
-   |-- config.py                                 # Set up the app
-   |-- run.py                                    # Start the app - WSGI gateway
-   |
-   |-- ************************************************************************
-```
-
-<br />
-
-> App / Home Blueprint
-
-The *Home* blueprint handles UI Kit pages for authenticated users. This is the private zone of the app - the structure is presented below:
-
-```bash
-< PROJECT ROOT >
-   |
-   |-- app/
-   |    |-- base/                     # Base Blueprint - handles the authentication
-   |    |-- home/                     # Home Blueprint - serve app pages (private area)
-   |         |
-   |         |-- templates/           # UI Kit Pages
-   |              |
-   |              |-- index.html      # Default page
-   |              |-- page-404.html   # Error 404 - mandatory page
-   |              |-- page-500.html   # Error 500 - mandatory page
-   |              |-- page-403.html   # Error 403 - mandatory page
-   |              |-- *.html          # All other HTML pages
-   |
-   |-- requirements.txt               # Development modules - SQLite storage
-   |-- requirements-mysql.txt         # Production modules  - Mysql DMBS
-   |-- requirements-pqsql.txt         # Production modules  - PostgreSql DMBS
-   |
-   |-- .env                           # Inject Configuration via Environment
-   |-- config.py                      # Set up the app
-   |-- run.py                         # Start the app - WSGI gateway
-   |
-   |-- ************************************************************************
-```
 
 <br />
 
@@ -210,7 +177,7 @@ To recompile SCSS files, follow this setup:
 **Step #2** - Change the working directory to `assets` folder
 
 ```bash
-$ cd app/base/static/assets
+$ cd apps/static/assets
 ```
 
 <br />
@@ -228,40 +195,16 @@ $ yarn
 **Step #4** - Edit & Recompile SCSS files 
 
 ```bash
-$ gulp
+$ gulp scss
 ```
 
-The generated files (css, min.css) are saved in `static/assets/css` directory.
+The generated file is saved in `static/assets/css` directory.
 
-<br />
+<br /> 
 
 ## Deployment
 
 The project comes with a basic configuration for [Docker](https://www.docker.com/), [HEROKU](https://www.heroku.com/), [Gunicorn](https://gunicorn.org/), and [Waitress](https://docs.pylonsproject.org/projects/waitress/en/stable/).
-
-<br />
-
-### [Docker](https://www.docker.com/) execution
----
-
-The steps to start the template using Docker:
-
-> Get the code
-
-```bash
-$ git clone https://github.com/app-generator/priv-flask-soft-ui-dashboard-pro.git
-$ cd priv-flask-soft-ui-dashboard-pro
-```
-
-> Start the app in Docker
-
-```bash
-$ sudo docker-compose pull && sudo docker-compose build && sudo docker-compose up -d
-```
-
-Visit `http://localhost:5005` in your browser. The app should be up & running.
-
-<br />
 
 ### [Heroku](https://www.heroku.com/)
 ---
@@ -275,8 +218,8 @@ Steps to deploy on **Heroku**
 
 ```bash
 $ # Clone the source code:
-$ git clone https://github.com/app-generator/priv-jinja-soft-ui-dashboard-pro.git
-$ cd priv-jinja-soft-ui-dashboard-pro
+$ git clone https://github.com/app-generator/priv-flask-soft-ui-dashboard-pro.git
+$ cd priv-flask-soft-ui-dashboard-pro
 $
 $ # Check Heroku CLI is installed
 $ heroku -v
@@ -347,4 +290,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-Soft UI Dashboard PRO Flask - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
+[Soft UI Dashboard PRO Flask](https://appseed.us/product/flask-soft-ui-dashboard-pro) - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
