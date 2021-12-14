@@ -1,17 +1,17 @@
-# [Soft UI Dashboard PRO Flask](https://appseed.us/product/flask-soft-ui-dashboard-pro)
+# [Soft Dashboard PRO Flask](https://appseed.us/product/flask-soft-ui-dashboard-pro)
 
-**Flask Seed Project** provided by AppSeed on top of **Soft UI Dashboard PRO**, a modern Bootstrap 5 design from Creative-Tim. The project might help beginners to code simple presentation websites on top of the existing codebase OR migrate the `production-ready` UI to a legacy Python-based project compatible with **Jinja Template Engine**: *Flask*, *Django*, *Bottle* of *FastAPI*. 
+Soft UI Dashboard is a premium  **Bootstrap 5 Design** now available for download in Flask. Made of hundred of elements, designed blocks, and fully coded pages, **Soft UI Dashboard PRO** is ready to help you create stunning websites and web apps. 
 
 <br />
 
 - `Up-to-date dependencies`: **Flask 2.0.1**
 - [SCSS compilation](#recompile-css) via **Gulp**
 - UI Kit: **[Soft UI Dashboard PRO](https://bit.ly/2RtSXVa)** (Free Version) by **Creative-Tim**
-- DBMS: SQLite, PostgreSQL (production) 
-- DB Tools: SQLAlchemy ORM, Flask-Migrate (schema migrations)
+- `DBMS`: SQLite, PostgreSQL (production) 
+- `DB Tools`: SQLAlchemy ORM, Flask-Migrate (schema migrations)
 - Modular design with **Blueprints**
 - Session-Based authentication (via **flask_login**), Forms validation
-- Deployment scripts: Docker, Gunicorn / Nginx, HEROKU
+- `Deployment`: **Docker**, Gunicorn / Nginx, HEROKU
 - Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
 
 <br />
@@ -35,16 +35,14 @@ $ cd priv-flask-soft-ui-dashboard-pro
 > Start the app in Docker
 
 ```bash
-$ docker-compose pull   # download dependencies 
-$ docker-compose build  # local set up
-$ docker-compose up -d  # start the app 
+$ docker-compose up --build
 ```
 
 Visit `http://localhost:85` in your browser. The app should be up & running.
 
 <br />
 
-![Soft UI Dashboard PR0 - Flask Seed Project.](https://user-images.githubusercontent.com/51070104/123518571-1f703400-d6af-11eb-8aab-cf1b9c5e2763.png)
+![Soft UI Dashboard PR0 - Flask Seed Project.](https://user-images.githubusercontent.com/51070104/145988181-d26c062f-0ff7-4236-af72-f26f29d47813.png)
 
 <br />
 
