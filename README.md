@@ -1,4 +1,4 @@
-# [Soft Dashboard PRO Flask](https://appseed.us/product/flask-soft-ui-dashboard-pro)
+# [Soft Dashboard PRO Flask](https://appseed.us/product/soft-ui-dashboard-pro/flask/)
 
 Soft UI Dashboard is a premium  **Bootstrap 5 Design** now available for download in Flask. Made of hundred of elements, designed blocks, and fully coded pages, **Soft UI Dashboard PRO** is ready to help you create stunning websites and web apps. 
 
@@ -18,8 +18,8 @@ Soft UI Dashboard is a premium  **Bootstrap 5 Design** now available for downloa
 
 > Links:
 
-- [Soft UI Dashboard PRO Flask](https://appseed.us/product/flask-soft-ui-dashboard-pro) - Product Page
-- [Soft UI Dashboard PRO Flask](https://flask-soft-ui-dashboard-pro.appseed-srv1.com/) - LIVE Demo
+- 👉 [Soft UI Dashboard PRO Flask](https://appseed.us/product/soft-ui-dashboard-pro/flask/) - Product Page
+- 👉 [Soft UI Dashboard PRO Flask](https://flask-soft-ui-dashboard-pro.appseed-srv1.com/) - LIVE Demo
 
 <br />
 
@@ -288,4 +288,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Soft UI Dashboard PRO Flask](https://appseed.us/product/flask-soft-ui-dashboard-pro) - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
+[Soft UI Dashboard PRO Flask](https://appseed.us/product/soft-ui-dashboard-pro/flask/) - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
