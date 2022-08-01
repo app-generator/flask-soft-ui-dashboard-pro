@@ -1,5 +1,17 @@
 # Change Log
 
+## [1.0.5] 2022-08-01
+### Improvements
+
+- `Authentication`
+  - Password checker (`registration` page) 
+  - Change password
+  - Self Account Deletion
+  - Automatic suspension on failed logins 
+- `Users Management` 
+  - `Extended user profile`
+  - Complete Users management (for `Admins`) 
+
 ## [1.0.4] 2022-06-28
 ### Improvements
 
