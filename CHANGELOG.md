@@ -1,5 +1,20 @@
 # Change Log
 
+## [1.0.6] 2022-08-25
+### Improvements
+
+- Auth:
+  - OAuth - Warn the user to provide an email
+  - Session-Based login is possible user OR Email
+  - Remove `old password` input for `change pass` option
+- API via Flask-RestX
+  - Path: `/api/` 
+  - `Products`, `Sales` models   
+- User profile   
+  - Improved UX
+  - Added `API Explorer` component
+  - List the `API_KEY` (required in API usage)
+
 ## [1.0.5] 2022-08-01
 ### Improvements
 
@@ -11,7 +26,7 @@
 - `Users Management` 
   - `Extended user profile`
   - Complete Users management (for `Admins`) 
-
+  
 ## [1.0.4] 2022-06-28
 ### Improvements
 
