@@ -1,32 +1,15 @@
 # Change Log
 
-## [1.0.6] 2022-08-25
-### Improvements
+## [1.0.5] 2023-02-17 
+### Changes
 
-- Auth:
-  - OAuth - Warn the user to provide an email
-  - Session-Based login is possible user OR Email
-  - Remove `old password` input for `change pass` option
-- API via Flask-RestX
-  - Path: `/api/` 
-  - `Products`, `Sales` models   
-- User profile   
-  - Improved UX
-  - Added `API Explorer` component
-  - List the `API_KEY` (required in API usage)
+- Bump UI: [Soft Dashboard PRO](https://bit.ly/2RtSXVa) `v1.1.1`
+- Deployment-ready for Render (CI/CD)
+  - `render.yaml`
+- DBMS silent fallback to SQLite:
+  - `.env` DBMS settings not good or not present
+- `CDN` support
 
-## [1.0.5] 2022-08-01
-### Improvements
-
-- `Authentication`
-  - Password checker (`registration` page) 
-  - Change password
-  - Self Account Deletion
-  - Automatic suspension on failed logins 
-- `Users Management` 
-  - `Extended user profile`
-  - Complete Users management (for `Admins`) 
-  
 ## [1.0.4] 2022-06-28
 ### Improvements
 
